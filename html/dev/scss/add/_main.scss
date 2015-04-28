@@ -1,26 +1,174 @@
 main {
   position: relative;
   z-index: 1;
-  #top {
-    background: #f4f4f4;
-    padding-top: 70px;
+}
+
+#top {
+  background: #f4f4f4;
+  padding-top: 4.375rem;
+  .left {
+    width: 40%;
+    max-width: 750px;
+    display: table-cell;
+    vertical-align: bottom;
+    img {
+      width: 100%;
+    }
+  }
+  .right {
+    display: table-cell;
+    vertical-align: middle;
+    .text-container {
+      width: 530px;
+      margin-left: 4.375rem;
+    }
+    h2 {
+      border-bottom: 1px solid #cccccc;
+      padding: 0 0 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 1280px) {
     .left {
-      width: 40%;
-      display: inline-block;
-      vertical-align: middle;
-      img {
-        width: 100%;
-      }
+      width: 50%;
     }
     .right {
-      width: 530px;
+      .text-container {
+        width: auto;
+      }
+    }
+  }
+}
+
+#ScrollContainer {
+  background: #f4f4f4;
+  padding-top: 4.375rem;
+  position: relative;
+//  height: 2000px;
+  .ScrollBorder {
+    position: absolute;
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .topRow {
+      width: 100%;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      .leftHalf {
+        height: 20px;
+        width: 50%;
+        float: left;
+        background: #71daf6;
+      }
+      .rightHalf {
+        height: 20px;
+        width: 50%;
+        float: left;
+        background: #dbdbdb;
+      }
+    }
+    .bottomRow {
+      width: 100%;
+      height: 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      .leftHalf {
+        height: 20px;
+        width: 50%;
+        float: left;
+        background: #dbdbdb;
+      }
+      .rightHalf {
+        height: 20px;
+        width: 50%;
+        float: left;
+        background: #71daf6;
+      }
+    }
+    .rightCol {
+      height: 100%;
+      width: 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      .topHalf {
+        height: 50%;
+        width: 20px;
+        float: left;
+        background: #dbdbdb;
+      }
+      .bottomHalf {
+        height: 50%;
+        width: 20px;
+        float: left;
+        background: #71daf6;
+      }
+    }
+    .leftCol {
+      height: 100%;
+      width: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .topHalf {
+        height: 50%;
+        width: 20px;
+        float: left;
+        background: #71daf6;
+      }
+      .bottomHalf {
+        height: 50%;
+        width: 20px;
+        float: left;
+        background: #dbdbdb;
+      }
+    }
+  }
+  #videoContainer {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+  }
+  #videoCanvas {
+    position: absolute;
+    top: 0;
+    z-index: 20;
+  }
+  #videoBlock {
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+  }
+  .defaultBlock {
+    display: block;
+    position: relative;
+    z-index: 20;
+    text-align: center;
+    blockquote {
+      color: #fff;
+      width: 50%;
       display: inline-block;
-      vertical-align: middle;
-      margin-left: 70px;
-      h2 {
-        border-bottom: 1px solid #cccccc;
-        padding: 40px 0;
-        margin-bottom: 40px;
+      position: absolute;
+      top:30%;
+      margin: 0 auto;
+      p {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      footer {
+        cite {
+          font-size: 2.875rem;
+          font-weight: 600;
+        }
       }
     }
   }

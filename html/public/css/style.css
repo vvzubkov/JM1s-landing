@@ -1,24 +1,51 @@
-main #top .left,main #top .right{display:inline-block;vertical-align:middle}
-body,html{background:#fff;color:#000;font-size:16px;font-family:ProximaNova-Thin;min-width:1024px}
+body,html{background:#fff;color:#000;font-size:16px;font-family:ProximaNova-Thin;font-weight:300;min-width:1024px}
+@media screen and (max-width:1280px){body,html{font-size:14px}
+}
 .wrapper{width:100%;overflow:hidden;position:relative}
-.fixed{position:fixed}
-h2{font-size:36px;line-height:48px;font-weight:600}
+.fixed{position:fixed!important}
+h2{font-size:2.25rem;line-height:3rem;font-weight:600}
+.c-blue{color:#00a0cb}
 .btn{width:270px;display:inline-block;color:#fff;font-size:21px;font-weight:400;text-align:center;line-height:50px;-webkit-transition:all 150ms;transition:all 150ms}
 .btn:hover{opacity:.9}
 .btn.btn-blue{background:#00a0cb}
-header{font-family:ProximaNova-Thin;font-size:1rem;width:100%;position:relative;z-index:10}
-header .wrapper{background:#fff}
-header .logo{position:absolute;left:1rem;top:1rem}
-header .navbar{display:block;overflow:hidden;text-align:center}
-header .navbar-list{display:inline-block;text-align:center}
-header .navbar-list .navbar-el{display:block;float:left}
-header .navbar-list .navbar-el a{color:#333;font-size:21px;line-height:70px;-webkit-transition:color 150ms;transition:color 150ms}
-header .navbar-list .navbar-el a:after{content:"/";color:#333;padding:1rem;font-size:21px;line-height:70px}
-header .navbar-list .navbar-el a:hover{color:#00a0cb}
-header .navbar-list .navbar-el:last-of-type a:after{content:""}
+#header{font-family:ProximaNova-Thin;font-size:1rem;width:100%;height:4.375rem;position:relative;z-index:10}
+#header .wrapper{background:#fff}
+#header .logo{position:absolute;left:1rem;top:1rem}
+#header .navbar{display:block;overflow:hidden;text-align:center;height:4.375rem}
+#header .navbar-list{display:inline-block;text-align:center}
+#header .navbar-list .navbar-el{display:block;float:left}
+#header .navbar-list .navbar-el a{color:#333;font-size:1.3125rem;line-height:4.375rem;height:4.375rem;-webkit-transition:color 150ms;transition:color 150ms}
+#header .navbar-list .navbar-el a:after{content:"/";color:#333;padding:1rem;font-size:1.3125rem;line-height:4.375rem}
+#header .navbar-list .navbar-el a:hover{color:#00a0cb}
+#header .navbar-list .navbar-el:last-of-type a:after{content:""}
 main{position:relative;z-index:1}
-main #top{background:#f4f4f4;padding-top:70px}
-main #top .left{width:40%}
-main #top .left img{width:100%}
-main #top .right{width:530px;margin-left:70px}
-main #top .right h2{border-bottom:1px solid #ccc;padding:40px 0;margin-bottom:40px}
+#top{background:#f4f4f4;padding-top:4.375rem}
+#top .left{width:40%;max-width:750px;display:table-cell;vertical-align:bottom}
+#top .left img{width:100%}
+#top .right{display:table-cell;vertical-align:middle}
+#top .right .text-container{width:530px;margin-left:4.375rem}
+#top .right h2{border-bottom:1px solid #ccc;padding:0 0 2.5rem;margin-bottom:2.5rem}
+@media screen and (max-width:1280px){#top .left{width:50%}
+#top .right .text-container{width:auto}
+}
+#ScrollContainer{background:#f4f4f4;padding-top:4.375rem;position:relative}
+#ScrollContainer .ScrollBorder{position:absolute;z-index:1000;display:block;width:100%;height:100%;top:0;left:0}
+#ScrollContainer .ScrollBorder .topRow{width:100%;height:20px;position:absolute;top:0}
+#ScrollContainer .ScrollBorder .topRow .leftHalf{height:20px;width:50%;float:left;background:#71daf6}
+#ScrollContainer .ScrollBorder .topRow .rightHalf{height:20px;width:50%;float:left;background:#dbdbdb}
+#ScrollContainer .ScrollBorder .bottomRow{width:100%;height:20px;position:absolute;bottom:0;left:0}
+#ScrollContainer .ScrollBorder .bottomRow .leftHalf{height:20px;width:50%;float:left;background:#dbdbdb}
+#ScrollContainer .ScrollBorder .bottomRow .rightHalf{height:20px;width:50%;float:left;background:#71daf6}
+#ScrollContainer .ScrollBorder .rightCol{height:100%;width:20px;position:absolute;top:0;right:0}
+#ScrollContainer .ScrollBorder .rightCol .topHalf{height:50%;width:20px;float:left;background:#dbdbdb}
+#ScrollContainer .ScrollBorder .rightCol .bottomHalf{height:50%;width:20px;float:left;background:#71daf6}
+#ScrollContainer .ScrollBorder .leftCol{height:100%;width:20px;position:absolute;top:0;left:0}
+#ScrollContainer .ScrollBorder .leftCol .topHalf{height:50%;width:20px;float:left;background:#71daf6}
+#ScrollContainer .ScrollBorder .leftCol .bottomHalf{height:50%;width:20px;float:left;background:#dbdbdb}
+#ScrollContainer #videoContainer{position:absolute;width:100%;top:0;z-index:10;text-align:center}
+#ScrollContainer #videoCanvas{position:absolute;top:0;z-index:20}
+#ScrollContainer #videoBlock{width:100%;top:0;z-index:10;position:relative;display:inline-block}
+#ScrollContainer .defaultBlock{display:block;position:relative;z-index:20;text-align:center}
+#ScrollContainer .defaultBlock blockquote{color:#fff;width:50%;display:inline-block;position:absolute;top:30%;margin:0 auto}
+#footer{color:#fff;text-align:center;background:#000;position:relative}
+#footer .wrapper{height:1000px;vertical-align:middle;display:inline-block}
