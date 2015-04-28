@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+//Main styles
+html, body {
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-family: 'ProximaNova-Thin';
+  min-width: 1024px;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+.btn {
+  width: 270px;
+  display: inline-block;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+  transition: all 150ms;
+  &:hover {
+    opacity: 0.9;
+  }
+  &.btn-blue {
+    background: #00a0cb;
+  }
+}
+
+// Header
+@import "add/header";
+
+// Main
+@import "add/main";
+
+// Footer
+@import "add/footer";

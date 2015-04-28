@@ -1,0 +1,49 @@
+header {
+  font-family: ProximaNova-Thin;
+  font-size: 1rem;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  .wrapper {
+    background: #fff;
+  }
+  .logo {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
+  .navbar {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+  }
+  .navbar-list {
+    display: inline-block;
+    text-align: center;
+    .navbar-el {
+      display: block;
+      float: left;
+      a {
+        color: #333333;
+        font-size: 1.3125rem;
+        line-height: 4.375rem;
+        transition: color 150ms;
+        &:after {
+          content: "/";
+          color: #333333;
+          padding: 1rem;
+          font-size: 1.3125rem;
+          line-height: 4.375rem;
+        }
+        &:hover {
+          color: #00a0cb;
+        }
+      }
+      &:last-of-type {
+        a:after {
+          content: "";
+        }
+      }
+    }
+  }
+}

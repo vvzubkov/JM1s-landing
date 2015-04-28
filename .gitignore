@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+.idea
+.idea/*
+
+# mockup
+mockup
+mockup/*
+
+# node
+node_modules
+node_modules/*
+
+

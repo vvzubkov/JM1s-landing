@@ -1,0 +1,27 @@
+main {
+  position: relative;
+  z-index: 1;
+  #top {
+    background: #f4f4f4;
+    padding-top: 70px;
+    .left {
+      width: 40%;
+      display: inline-block;
+      vertical-align: middle;
+      img {
+        width: 100%;
+      }
+    }
+    .right {
+      width: 530px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 70px;
+      h2 {
+        border-bottom: 1px solid #cccccc;
+        padding: 40px 0;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+html, body {
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-family: 'ProximaNova-Thin';
+  min-width: 1024px; }
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.fixed {
+  position: fixed; }
+
+h2 {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 600; }
+
+.btn {
+  width: 270px;
+  display: inline-block;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+  -webkit-transition: all 150ms;
+          transition: all 150ms; }
+  .btn:hover {
+    opacity: 0.9; }
+  .btn.btn-blue {
+    background: #00a0cb; }
+
+header {
+  font-family: ProximaNova-Thin;
+  font-size: 1rem;
+  width: 100%;
+  position: relative;
+  z-index: 10; }
+  header .wrapper {
+    background: #fff; }
+  header .logo {
+    position: absolute;
+    left: 1rem;
+    top: 1rem; }
+  header .navbar {
+    display: block;
+    overflow: hidden;
+    text-align: center; }
+  header .navbar-list {
+    display: inline-block;
+    text-align: center; }
+    header .navbar-list .navbar-el {
+      display: block;
+      float: left; }
+      header .navbar-list .navbar-el a {
+        color: #333333;
+        font-size: 21px;
+        line-height: 70px;
+        -webkit-transition: color 150ms;
+                transition: color 150ms; }
+        header .navbar-list .navbar-el a:after {
+          content: "/";
+          color: #333333;
+          padding: 1rem;
+          font-size: 21px;
+          line-height: 70px; }
+        header .navbar-list .navbar-el a:hover {
+          color: #00a0cb; }
+      header .navbar-list .navbar-el:last-of-type a:after {
+        content: ""; }
+
+main {
+  position: relative;
+  z-index: 1; }
+  main #top {
+    background: #f4f4f4;
+    padding-top: 70px; }
+    main #top .left {
+      width: 40%;
+      display: inline-block;
+      vertical-align: middle; }
+      main #top .left img {
+        width: 100%; }
+    main #top .right {
+      width: 530px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 70px; }
+      main #top .right h2 {
+        border-bottom: 1px solid #cccccc;
+        padding: 40px 0;
+        margin-bottom: 40px; }
