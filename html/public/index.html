@@ -86,6 +86,20 @@
                         <div class="bottomHalf"></div>
                     </div>
                 </div>
+                <div class="scrollMenu">
+                    <ul class="scrollMenuList">
+                        <li class="el">
+                            <a href="#roster">class roster</a>
+                        </li>
+                        <li class="el">
+                            <a href="#dancestyles">dancestyles</a>
+                        </li>
+                        <li class="el">
+                            <a href="teacher">teacher</a>
+                        </li>
+                    </ul>
+                    <ul class="gridLineList"></ul>
+                </div>
                 <div id="videoContainer">
                     <canvas id="videoCanvas"></canvas>
                     <video id="videoBlock">
@@ -94,8 +108,8 @@
                                 <source src="media/mobile_mp4.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="scrollBlock defaultBlock animated">
-                    <blockquote>
+                <div class="scrollBlock defaultBlock">
+                    <blockquote class="vis-h animated">
                         <p> “That’s been one of my mantras — focus and simplicity.
                             <br/> Simple can be harder than complex;you have to work hard
                             <br/> to get your thinking clean to make it simple.” </p>
@@ -103,13 +117,12 @@
                             <cite>Steve Jobs</cite>
                         </footer>
                     </blockquote>
+                    <div class="vert-line vis-h animated"></div>
+                    <p class="scrollDown vis-h animated">scroll down</p>
                 </div>
-                <div class="scrollBlock defaultBlock animated">
-                    <div class="vert-line"></div>
-                </div>
-                <div class="scrollBlock defaultBlock animated">
-                    <p class="scrollDown animated">scroll down</p>
-                </div>
+                <div class="scrollBlock classRooster"></div>
+                <div class="scrollBlock danceStyles"></div>
+                <div class="scrollBlock teacher"></div>
             </section>
         </main>
         <footer id="footer">
@@ -120,6 +133,7 @@
         <!-- ---------- JS ------------->
         <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/jquery-ui-1.11.2.min.js"></script>
         <script src="js/source.js"></script>
     </body>
 

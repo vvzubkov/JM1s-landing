@@ -145,6 +145,44 @@ main {
       }
     }
   }
+  .scrollMenu {
+    position: absolute;
+    z-index: 20;
+    display: block;
+    width: auto;
+    height: 60%;
+    top: 20%;
+    right: 40px;
+    opacity: 0;
+//    visibility: hidden;
+    .scrollMenuList {
+      position: absolute;
+      top: 0;
+      right: 60px;
+      width: 200px;
+      text-align: right;
+      .el a{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        display: inline-block;
+      }
+    }
+    .gridLineList {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      .gridLine{
+        width: 20px;
+        height: 1px;
+        margin: 10px 0;
+        background: #fff;
+        opacity: 0.5;
+      }
+    }
+  }
   #videoContainer {
     position: absolute;
     width: 100%;
@@ -167,9 +205,10 @@ main {
   }
   .scrollBlock {
     display: block;
+    width: 100%;
     position: absolute;
     z-index: 15;
-    bottom: 0;
+    top: 0;
     visibility: hidden;
     text-align: center;
     blockquote {

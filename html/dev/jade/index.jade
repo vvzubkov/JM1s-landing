@@ -33,23 +33,39 @@ block content
           div.topHalf
           div.bottomHalf
 
+      div.scrollMenu
+        ul.scrollMenuList
+          li.el
+            a(href="#roster") class roster
+          li.el
+            a(href="#danceStyles") dancestyles
+          li.el
+            a(href="#teacher") teacher
+        ul.gridLineList
+
+
       div#videoContainer
         canvas#videoCanvas
         video#videoBlock
           source(src="media/H8Bg_mp4.mp4" type="video/mp4")
           source(src="media/H8Bg_webm.webm" type="video/web")
           source(src="media/mobile_mp4.mp4" type="video/mp4")
-      div.scrollBlock.defaultBlock.animated
-        blockquote
+
+      div.scrollBlock.defaultBlock
+        blockquote.vis-h.animated
           p.
             “That’s been one of my mantras — focus and simplicity.<br/>
             Simple can be harder than complex;you have to work hard <br/>
             to get your thinking clean to make it simple.”
           footer
             cite Steve Jobs
-      div.scrollBlock.defaultBlock.animated
-        div.vert-line
-      div.scrollBlock.defaultBlock.animated
-        p.scrollDown.animated scroll down
+        div.vert-line.vis-h.animated
+        p.scrollDown.vis-h.animated scroll down
+
+      div.scrollBlock.#roster
+
+      div.scrollBlock.#danceStyles
+
+      div.scrollBlock.#teacher
 
 block extra_script

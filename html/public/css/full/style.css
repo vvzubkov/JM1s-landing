@@ -203,6 +203,38 @@ main {
         bottom: 0;
         right: 0;
         background: #dbdbdb; }
+  #ScrollContainer .scrollMenu {
+    position: absolute;
+    z-index: 20;
+    display: block;
+    width: auto;
+    height: 60%;
+    top: 20%;
+    right: 40px;
+    opacity: 0; }
+    #ScrollContainer .scrollMenu .scrollMenuList {
+      position: absolute;
+      top: 0;
+      right: 60px;
+      width: 200px;
+      text-align: right; }
+      #ScrollContainer .scrollMenu .scrollMenuList .el a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        display: inline-block; }
+    #ScrollContainer .scrollMenu .gridLineList {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%; }
+      #ScrollContainer .scrollMenu .gridLineList .gridLine {
+        width: 20px;
+        height: 1px;
+        margin: 10px 0;
+        background: #fff;
+        opacity: 0.5; }
   #ScrollContainer #videoContainer {
     position: absolute;
     width: 100%;
@@ -222,9 +254,10 @@ main {
     display: inline-block; }
   #ScrollContainer .scrollBlock {
     display: block;
+    width: 100%;
     position: absolute;
     z-index: 15;
-    bottom: 0;
+    top: 0;
     visibility: hidden;
     text-align: center; }
     #ScrollContainer .scrollBlock blockquote {

@@ -42,10 +42,15 @@ main{position:relative;z-index:1}
 #ScrollContainer .ScrollBorder .leftCol{height:100%;width:20px;position:absolute;top:0;left:0}
 #ScrollContainer .ScrollBorder .leftCol .topHalf{height:50%;width:20px;position:absolute;top:0;right:0;background:#71daf6}
 #ScrollContainer .ScrollBorder .leftCol .bottomHalf{height:50%;width:20px;position:absolute;bottom:0;right:0;background:#dbdbdb}
+#ScrollContainer .scrollMenu{position:absolute;z-index:20;display:block;width:auto;height:60%;top:20%;right:40px;opacity:0}
+#ScrollContainer .scrollMenu .scrollMenuList{position:absolute;top:0;right:60px;width:200px;text-align:right}
+#ScrollContainer .scrollMenu .scrollMenuList .el a{color:#fff;text-transform:uppercase;font-size:.75rem;letter-spacing:1px;display:inline-block}
+#ScrollContainer .scrollMenu .gridLineList{position:absolute;top:0;right:0;height:100%}
+#ScrollContainer .scrollMenu .gridLineList .gridLine{width:20px;height:1px;margin:10px 0;background:#fff;opacity:.5}
 #ScrollContainer #videoContainer{position:absolute;width:100%;top:0;z-index:10;text-align:center;overflow:hidden}
 #ScrollContainer #videoCanvas{position:absolute;top:0;z-index:20}
 #ScrollContainer #videoBlock{width:100%;top:0;z-index:10;position:relative;display:inline-block}
-#ScrollContainer .scrollBlock{display:block;position:absolute;z-index:15;bottom:0;visibility:hidden;text-align:center}
+#ScrollContainer .scrollBlock{display:block;width:100%;position:absolute;z-index:15;top:0;visibility:hidden;text-align:center}
 #ScrollContainer .scrollBlock blockquote{color:#fff;width:50%;display:inline-block;position:absolute;top:30%;left:25%;margin:0 auto}
 #ScrollContainer .scrollBlock blockquote p{font-family:ProximaNova-Thin;font-size:1.5rem;font-weight:100}
 #ScrollContainer .scrollBlock blockquote footer cite{font-size:2.875rem;line-height:5rem;font-weight:300}

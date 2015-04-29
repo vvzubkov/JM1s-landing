@@ -6,24 +6,24 @@ var _bottom_row = document.querySelector('.bottomRow');
 var _bottom_row_l = _bottom_row.querySelector('.leftHalf');
 var _bottom_row_r = _bottom_row.querySelector('.rightHalf');
 
-//_def_b.style.height = (_window_h - _header_h) + 'px';
+//_def_b.style.height = (window_h - header_h) + 'px';
 
-//_top_row_l.style.height = ((_window_h - _header_h) / 2)+'px';
-//_top_row_r.style.height = ((_window_h - _header_h) / 2)+'px';
-//_bottom_row_l.style.height = ((_window_h - _header_h) / 2)+'px';
-//_bottom_row_r.style.height = ((_window_h - _header_h) / 2)+'px';
+//_top_row_l.style.height = ((window_h - header_h) / 2)+'px';
+//_top_row_r.style.height = ((window_h - header_h) / 2)+'px';
+//_bottom_row_l.style.height = ((window_h - header_h) / 2)+'px';
+//_bottom_row_r.style.height = ((window_h - header_h) / 2)+'px';
 
-//_video.addEventListener('play', function () {
+//video.addEventListener('play', function () {
 //    var cw, ch;
-//    cw = _video_c.clientWidth;
-//    ch = _video_c.clientHeight;
+//    cw = video_c.clientWidth;
+//    ch = video_c.clientHeight;
 //    console.log(cw);
 //    console.log(ch);
 //    canvas.width = cw;
 //    canvas.height = ch;
 //    back.width = cw;
 //    back.height = ch;
-//    draw(_video, ctx, backcontext, cw, ch);
+//    draw(video, ctx, backcontext, cw, ch);
 //}, false);
 
 function draw(v, c, bc, w, h) {
