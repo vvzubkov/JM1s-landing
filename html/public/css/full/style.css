@@ -114,11 +114,11 @@ main {
 
 #ScrollContainer {
   background: #f4f4f4;
-  padding-top: 4.375rem;
-  position: relative; }
+  position: relative;
+  height: 5000px; }
   #ScrollContainer .ScrollBorder {
     position: absolute;
-    z-index: 1000;
+    z-index: 20;
     display: block;
     width: 100%;
     height: 100%;
@@ -132,12 +132,16 @@ main {
       #ScrollContainer .ScrollBorder .topRow .leftHalf {
         height: 20px;
         width: 50%;
-        float: left;
+        position: absolute;
+        top: 0;
+        left: 0;
         background: #71daf6; }
       #ScrollContainer .ScrollBorder .topRow .rightHalf {
         height: 20px;
         width: 50%;
-        float: left;
+        position: absolute;
+        top: 0;
+        right: 0;
         background: #dbdbdb; }
     #ScrollContainer .ScrollBorder .bottomRow {
       width: 100%;
@@ -148,12 +152,16 @@ main {
       #ScrollContainer .ScrollBorder .bottomRow .leftHalf {
         height: 20px;
         width: 50%;
-        float: left;
+        position: absolute;
+        top: 0;
+        left: 0;
         background: #dbdbdb; }
       #ScrollContainer .ScrollBorder .bottomRow .rightHalf {
         height: 20px;
         width: 50%;
-        float: left;
+        position: absolute;
+        top: 0;
+        right: 0;
         background: #71daf6; }
     #ScrollContainer .ScrollBorder .rightCol {
       height: 100%;
@@ -164,12 +172,16 @@ main {
       #ScrollContainer .ScrollBorder .rightCol .topHalf {
         height: 50%;
         width: 20px;
-        float: left;
+        position: absolute;
+        top: 0;
+        right: 0;
         background: #dbdbdb; }
       #ScrollContainer .ScrollBorder .rightCol .bottomHalf {
         height: 50%;
         width: 20px;
-        float: left;
+        position: absolute;
+        bottom: 0;
+        right: 0;
         background: #71daf6; }
     #ScrollContainer .ScrollBorder .leftCol {
       height: 100%;
@@ -180,19 +192,24 @@ main {
       #ScrollContainer .ScrollBorder .leftCol .topHalf {
         height: 50%;
         width: 20px;
-        float: left;
+        position: absolute;
+        top: 0;
+        right: 0;
         background: #71daf6; }
       #ScrollContainer .ScrollBorder .leftCol .bottomHalf {
         height: 50%;
         width: 20px;
-        float: left;
+        position: absolute;
+        bottom: 0;
+        right: 0;
         background: #dbdbdb; }
   #ScrollContainer #videoContainer {
     position: absolute;
     width: 100%;
     top: 0;
     z-index: 10;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
   #ScrollContainer #videoCanvas {
     position: absolute;
     top: 0;
@@ -203,18 +220,49 @@ main {
     z-index: 10;
     position: relative;
     display: inline-block; }
-  #ScrollContainer .defaultBlock {
+  #ScrollContainer .scrollBlock {
     display: block;
-    position: relative;
-    z-index: 20;
+    position: absolute;
+    z-index: 15;
+    bottom: 0;
+    visibility: hidden;
     text-align: center; }
-    #ScrollContainer .defaultBlock blockquote {
+    #ScrollContainer .scrollBlock blockquote {
       color: #fff;
       width: 50%;
       display: inline-block;
       position: absolute;
       top: 30%;
+      left: 25%;
       margin: 0 auto; }
+      #ScrollContainer .scrollBlock blockquote p {
+        font-family: 'ProximaNova-Thin';
+        font-size: 1.5rem;
+        font-weight: 100; }
+      #ScrollContainer .scrollBlock blockquote footer cite {
+        font-size: 2.875rem;
+        line-height: 5rem;
+        font-weight: 300; }
+    #ScrollContainer .scrollBlock .vert-line {
+      width: 2px;
+      background: rgba(255, 255, 255, 0.75);
+      height: 4.375rem;
+      position: absolute;
+      display: block;
+      bottom: 8rem;
+      left: 50%; }
+    #ScrollContainer .scrollBlock .scrollDown {
+      display: inline-block;
+      position: absolute;
+      bottom: 4.375rem;
+      left: 40%;
+      width: 20%;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 10px 0;
+      font-weight: 600;
+      font-size: 0.875rem; }
 
 #footer {
   color: #fff;
