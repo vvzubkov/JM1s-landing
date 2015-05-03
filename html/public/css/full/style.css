@@ -17,6 +17,14 @@ html, body {
 .fixed {
   position: fixed !important; }
 
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase; }
+
 h2 {
   font-size: 2.25rem;
   line-height: 3rem;
@@ -39,6 +47,75 @@ h2 {
     opacity: 0.9; }
   .btn.btn-blue {
     background: #00a0cb; }
+
+.vis-h {
+  visibility: hidden !important; }
+
+/*----------- preloader ----------*/
+.preLoader {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 1; }
+
+.spinner {
+  margin: -20px auto 100px -20px;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  -webkit-animation: rotate 2s infinite linear;
+  animation: rotate 2s infinite linear; }
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2s infinite ease-in-out; }
+
+.dot2 {
+  top: auto;
+  bottom: 0px;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s; }
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: scale(0); }
+
+  50% {
+    -webkit-transform: scale(1); } }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
 
 #header {
   font-family: ProximaNova-Thin;
@@ -115,7 +192,9 @@ main {
 #ScrollContainer {
   background: #f4f4f4;
   position: relative;
-  height: 5000px; }
+  width: 100%;
+  height: 2000px;
+  overflow: hidden; }
   #ScrollContainer .ScrollBorder {
     position: absolute;
     z-index: 20;
@@ -207,7 +286,7 @@ main {
     position: absolute;
     z-index: 20;
     display: block;
-    width: auto;
+    width: 300px;
     height: 60%;
     top: 20%;
     right: 40px;
@@ -232,7 +311,7 @@ main {
       #ScrollContainer .scrollMenu .gridLineList .gridLine {
         width: 20px;
         height: 1px;
-        margin: 10px 0;
+        margin: 0.5rem 0;
         background: #fff;
         opacity: 0.5; }
   #ScrollContainer #videoContainer {
@@ -255,10 +334,11 @@ main {
   #ScrollContainer .scrollBlock {
     display: block;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 15;
     top: 0;
-    visibility: hidden;
+    padding: 40px;
+    visibility: visible;
     text-align: center; }
     #ScrollContainer .scrollBlock blockquote {
       color: #fff;

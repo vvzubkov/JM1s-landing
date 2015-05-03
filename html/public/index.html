@@ -20,6 +20,12 @@
         <link href="css/style.css" rel="stylesheet"> </head>
 
     <body>
+        <div class="preLoader">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
         <header id="header" class="fixed">
             <div class="wrapper">
                 <div class="logo">
@@ -30,22 +36,22 @@
                 <nav class="navbar">
                     <ul class="navbar-list">
                         <li class="navbar-el">
-                            <a href="#">Home</a>
+                            <a href="#" class="scrollMenuLink">Home</a>
                         </li>
                         <li class="navbar-el">
-                            <a href="#">Classes</a>
+                            <a href="#" class="scrollMenuLink">Classes</a>
                         </li>
                         <li class="navbar-el">
-                            <a href="#">Agenda</a>
+                            <a href="#" class="scrollMenuLink">Agenda</a>
                         </li>
                         <li class="navbar-el">
-                            <a href="#">Social</a>
+                            <a href="#" class="scrollMenuLink">Social</a>
                         </li>
                         <li class="navbar-el">
-                            <a href="#">Timeline</a>
+                            <a href="#" class="scrollMenuLink">Timeline</a>
                         </li>
                         <li class="navbar-el">
-                            <a href="#">Contact</a>
+                            <a href="#" class="scrollMenuLink">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -89,13 +95,13 @@
                 <div class="scrollMenu">
                     <ul class="scrollMenuList">
                         <li class="el">
-                            <a href="#roster">class roster</a>
+                            <a href="#roster" class="scrollMenuLink">class roster</a>
                         </li>
                         <li class="el">
-                            <a href="#dancestyles">dancestyles</a>
+                            <a href="#danceStyles" class="scrollMenuLink">dancestyles</a>
                         </li>
                         <li class="el">
-                            <a href="teacher">teacher</a>
+                            <a href="#teacher" class="scrollMenuLink">teacher</a>
                         </li>
                     </ul>
                     <ul class="gridLineList"></ul>
@@ -108,8 +114,8 @@
                                 <source src="media/mobile_mp4.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="scrollBlock defaultBlock">
-                    <blockquote class="vis-h animated">
+                <div id="defaultBlock" class="scrollBlock">
+                    <blockquote class="animated">
                         <p> “That’s been one of my mantras — focus and simplicity.
                             <br/> Simple can be harder than complex;you have to work hard
                             <br/> to get your thinking clean to make it simple.” </p>
@@ -117,12 +123,18 @@
                             <cite>Steve Jobs</cite>
                         </footer>
                     </blockquote>
-                    <div class="vert-line vis-h animated"></div>
-                    <p class="scrollDown vis-h animated">scroll down</p>
+                    <div class="vert-line animated"></div>
+                    <p class="scrollDown animated">scroll down</p>
                 </div>
-                <div class="scrollBlock classRooster"></div>
-                <div class="scrollBlock danceStyles"></div>
-                <div class="scrollBlock teacher"></div>
+                <div id="roster" class="scrollBlock">
+                    <h1>roster</h1>
+                </div>
+                <div id="danceStyles" class="scrollBlock">
+                    <h1>danceStyles</h1>
+                </div>
+                <div id="teacher" class="scrollBlock">
+                    <h1>teacher</h1>
+                </div>
             </section>
         </main>
         <footer id="footer">
@@ -134,7 +146,13 @@
         <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/jquery-migrate-1.2.1.min.js"></script>
         <script src="js/jquery-ui-1.11.2.min.js"></script>
-        <script src="js/source.js"></script>
+        <!--CDN link for the latest TweenMax-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <!--CDN links for the latest TweenLite, CSSPlugin, and EasePack-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+        <script src="js/init.js"></script>
     </body>
 
 </html>

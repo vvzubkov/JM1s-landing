@@ -8,16 +8,21 @@ function H8VideoModule(_showStats) {
     var _videosContainer = document.getElementById("H8VideoContainer");
     var _video = document.getElementById("H8Video");
     var _gesturesContainer = document.getElementById('contentspots_1_AnchorDiv');
+
     H8._bgVideo = _video;
+
     var _maskY = 0, _pScroll = 0, _circleRadius = 0, _targetRadius = 0, _videoW = 0, _videoH = 0, _videoOffsetX = 0, _videoOffsetY = 0, _videoTimer = 0;
     _this._r = 0;
     //Defines intervals for scrolling
     var _isRunning = false, _inView = false, _animMask = false, _imgWasSet = false, _isFixed = true, _isCanvasFixed = false, _videoHasPlayed = false, _videoIsPlaying = false, _restartVideoWhenScrollUp = false, _waitForVideoRestart = false;
+
     //Define break points for scrolling
     var _bpVideo = [9.5, 20, 37.5, 1000]; //Positions (in miliseconds) to pause video
     //var _bpVideo = [2.5, 16.5, 20, 1000]; //Positions (in miliseconds) to pause video
+
     var _bpOverlays = [3.5, 7, 10.5, 12.5]; //Start, stop from, stop to, start
     var _curVideoID = 0; //Which video section is currently playing
+
     //Create video overlays
     var _vo = document.querySelectorAll('.H8VideoOverlay');
     var _videoOverlays = [];
@@ -1280,6 +1285,7 @@ function H8getImg(_input) {
 
 var H8 = {};
 H8._isTouch = "ontouchstart" in window;
+
 //DEBUG
 //H8._isTouch = true;
 //H8._isTouch = false;
